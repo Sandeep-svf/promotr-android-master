@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="shadow">#00363E</color>
+    <color name="dark_text">#001315</color>
+    <color name="border">#E7E8ED</color>
+    <color name="dark_blue_text">#19244D</color>
+
+    <color name="primary">#019FB5</color>
+    <color name="primary_light">#5ad0e7</color>
+    <color name="primary_lightsss">#D5EFF4</color>
+    <color name="promoter_promo_color">#EAF7F9</color>
+    <color name="primary_dark">#007085</color>
+    <color name="primary_text_color">#FFFFFF</color>
+    <color name="background_color">#00000000</color>
+
+    <color name="secondary">#EEAD95</color>
+    <color name="secondary_light">#ffdfc6</color>
+    <color name="secondary_dark">#ba7d67</color>
+    <color name="secondary_text_color">#000000</color>
+
+    <color name="editText_background">#1A001315</color>
+    <color name="hintText">#33001315</color>
+    <color name="red">@android:color/holo_red_dark</color>
+
+    <color name="dialogBackground">#60000000</color>
+
+</resources>

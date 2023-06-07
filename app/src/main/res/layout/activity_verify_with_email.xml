@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".view.verifymobile.ui.VerifyWithEmailActivity">
+
+    <ImageButton
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        android:padding="20dp"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_dark_bold_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:text="@string/verify_your_email" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/screen_padding"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_dark_medium_14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verification_code_received_by_your_email" />
+
+        <EditText
+            android:id="@+id/et_otp"
+            style="@style/text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:autofillHints=" "
+            android:hint="@string/enter_received_otp"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            style="@style/primary_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</LinearLayout>

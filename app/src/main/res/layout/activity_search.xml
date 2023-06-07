@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".view.search.ui.SearchActivity">
+
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        android:padding="20dp"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/text_dark_bold_22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/screen_padding"
+        android:text="@string/title_search" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/screen_padding"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/text_dark_medium_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/influencer_or_stores" />
+
+            <EditText
+                android:id="@+id/storesTxt"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autofillHints="no"
+                android:hint="@string/search_by"
+                android:inputType="text" />
+
+            <TextView
+                style="@style/text_dark_medium_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/category" />
+
+            <RelativeLayout
+                style="@style/spinner_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    style="@style/Widget.App.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:dropDownWidth="wrap_content"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown" />
+
+            </RelativeLayout>
+
+            <Spinner
+                android:id="@+id/spinnerNewsss"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:dropDownSelector="@drawable/check"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/relative_spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="9dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/arrows"
+                    android:tint="@color/black"
+                    tools:ignore="UseAppTint,contentDescription" />
+
+                <Spinner
+                    android:id="@+id/spinnerNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:background="@null"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/spinnerViewCategory"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:hint="@string/choose"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_font_size_16"
+                android:visibility="gone"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_padding="8dp"
+                app:spinner_arrow_tint="@color/black"
+                app:spinner_divider_color="@color/black"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_height="46dp"
+                app:spinner_popup_animation="normal"
+                app:spinner_popup_background="@color/white"
+                app:spinner_popup_elevation="14dp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <TextView
+                style="@style/text_dark_medium_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/discount_amount" />
+
+            <EditText
+                android:id="@+id/et_discount"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autofillHints="no"
+                android:inputType="text"
+                android:visibility="gone" />
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/spinnerViewDiscount"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:hint="@string/discount"
+                android:padding="10dp"
+                android:textColor="@color/dark_text"
+                android:textSize="@dimen/text_font_size_16"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_padding="8dp"
+                app:spinner_arrow_tint="@color/black"
+                app:spinner_divider_color="@color/black"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_item_height="46dp"
+                app:spinner_popup_animation="normal"
+                app:spinner_popup_background="@color/white"
+                app:spinner_popup_elevation="14dp"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <TextView
+                style="@style/text_dark_medium_14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/available_before" />
+
+            <EditText
+                android:id="@+id/et_beforeDatess"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:autofillHints="no"
+                android:inputType="date"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/datesLayout"
+                style="@style/text_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/dateTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/dates"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hintText"
+                    android:hint="@string/available_before"
+                    android:textSize="@dimen/text_font_size_16" />
+
+                <ImageView
+                    android:id="@+id/dates"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/calendar"
+                    tools:ignore="UseAppTint" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnsearch"
+                style="@style/primary_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/buttons_height"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:text="@string/search_by"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

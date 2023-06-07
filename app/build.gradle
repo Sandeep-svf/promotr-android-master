@@ -1,0 +1,151 @@
+plugins {
+    id 'com.android.application'
+    id 'dagger.hilt.android.plugin'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    //compileSdkVersion 33
+    compileSdkVersion "android-UpsideDownCake"
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.freqwency.promotr"
+        minSdkVersion 26
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField("boolean", "IS_DEBUG", "false")
+            buildConfigField("String", "API_KEY", '"AndroidJUnit4AndroidJUnit4"')
+            buildConfigField("String", "IMAGE_KEY", '"AndroidJUnit4AndroidJUnit4asf"')
+        }
+
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("boolean", "IS_DEBUG", "true")
+            buildConfigField("String", "API_KEY", '"https://api.promotr.club/api/v1/"')
+            buildConfigField("String", "IMAGE_KEY", '"https://api.promotr.club/storage/"')
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility kotlin_version
+        targetCompatibility kotlin_version
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += "-Xopt-in=kotlinx.coroutines.ExperimentalCoroutinesApi"
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    lint {
+        ignore 'UseCompatLoadingForDrawables'
+    }
+    namespace 'com.freqwency.promotr'
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+   //implementation 'androidx.security:security-crypto-ktx:1.1.0-alpha04'
+    implementation 'androidx.security:security-crypto-ktx:1.1.0-alpha06'
+    implementation 'androidx.databinding:databinding-runtime:8.0.1'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.fornewid:neumorphism:0.3.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'com.google.android.material:material:1.10.0-alpha02'
+    //implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    // spinner
+    implementation "com.github.skydoves:powerspinner:1.2.4"
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.3'
+
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation 'com.squareup.retrofit2:converter-scalars:2.6.4'
+
+   /*implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.4.0'*/
+
+    //Rx
+    implementation "io.reactivex.rxjava2:rxjava:2.2.10"
+    implementation "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    //Dagger Hilt
+    implementation 'com.google.dagger:hilt-android:2.46'
+    kapt 'com.google.dagger:hilt-compiler:2.46'
+
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4'
+
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'androidx.fragment:fragment-ktx:1.5.7'
+
+    /* Alert dependency*/
+    implementation 'io.github.tutorialsandroid:kalertdialog:20.3.6'
+    implementation 'com.github.TutorialsAndroid:progressx:v6.0.19' //required for kalertdialog lib
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.15.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+
+    //ViewPager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+
+    //Image compress
+    implementation 'id.zelory:compressor:3.0.1'
+
+    //Pie chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //firebase
+   // implementation 'com.google.firebase:firebase-messaging:20.2.4'
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    //implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.firebase:firebase-auth:22.0.0'
+
+    implementation 'androidx.work:work-runtime-ktx:2.8.1'
+
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
+
+
+}
+apply plugin: 'com.google.gms.google-services'

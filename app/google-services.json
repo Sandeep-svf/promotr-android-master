@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "430772869721",
+    "project_id": "promotr",
+    "storage_bucket": "promotr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430772869721:android:babf093537b9142d48ef48",
+        "android_client_info": {
+          "package_name": "com.freqwency.promotr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430772869721-g79tsq8b7cosb31o24afkdcn42tc1fjv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.freqwency.promotr",
+            "certificate_hash": "a26b7f7e0d382b4222637ee4511e6a50a095e044"
+          }
+        },
+        {
+          "client_id": "430772869721-r9lmctccg9fkivuf63oi52iussns700l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBf5xiDfNcdpaSJzZa16mjbpYrHuSZAA3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430772869721-r9lmctccg9fkivuf63oi52iussns700l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "430772869721-5jspku7sbdq2je03pos3p5iie108jhl1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.freqwency.promotr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

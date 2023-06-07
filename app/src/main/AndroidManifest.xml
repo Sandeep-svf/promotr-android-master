@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <application
+        android:name=".application.PromotrApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Promotr">
+
+        <activity
+            android:name=".view.verifymobile.ui.VerifyWithEmailActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".view.promocodedetails.ui.PromoCodeDetailPromoterActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".view.AddPromoCode.ui.AddNewPromoCodeActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".view.activities.HistoryActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".view.search.ui.SearchResultActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait"/>
+        <activity
+            android:name=".view.becomePromoter.ui.PromoOwnerRegisterActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.freqwency.promotr"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <service
+            android:name=".fcm.FirebaseObserver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".view.activities.SplashActivity"
+            android:configChanges="orientation"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activities.BaseActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.promocodedetails.ui.PromoCodeDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.promocodedetails.ui.PromoCodeDetailActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.search.ui.SearchActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.activities.MainActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/Theme.Fab_Bottom_app_bar" />
+        <activity
+            android:name=".view.register.ui.RegisterActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.logins.ui.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".view.sliders.ui.SlidersActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.forgotpassword.ui.ResetPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.verifymobile.ui.VerifyMobileActivity"
+            android:exported="true"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.activities.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name=".view.userprofile.ui.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity
+            android:name=".view.promoterprofile.ui.PromoterProfileActivity"
+            android:exported="false"
+            android:screenOrientation="sensorPortrait" />
+    </application>
+
+</manifest>

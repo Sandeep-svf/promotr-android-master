@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".view.notification.ui.NotificationsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        android:layout_marginRight="@dimen/screen_padding">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/text_dark_bold_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="@string/title_notifications" />
+
+        <Button
+            android:id="@+id/deleteBtn"
+            style="@style/primary_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:paddingHorizontal="30dp"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_resetPass"
+            style="@style/text_dark_medium_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="@string/login_to_view_notifications" />
+
+        <Button
+            android:id="@+id/signInBtn"
+            style="@style/primary_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttons_height"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="@string/sign_in"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/screen_padding"
+        tools:listitem="@layout/notification_item" />
+
+</LinearLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.AddPromoCode.ui.AddNewPromoCodeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingStart="@dimen/screen_padding"
+                android:paddingEnd="@dimen/screen_padding"
+                android:paddingBottom="@dimen/screen_padding">
+
+                <TextView
+                    android:id="@+id/promoCodeHeading"
+                    style="@style/text_dark_bold_22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/add_new_promocode" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/category" />
+
+                <Spinner
+                    android:id="@+id/spinnerNew"
+                    style="@style/text_input"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:padding="10dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true" />
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/spinnerViewCategory"
+                    style="@style/text_input"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:hint="Choose"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_font_size_16"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="8dp"
+                    app:spinner_arrow_tint="@color/black"
+                    app:spinner_divider_color="@color/black"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_height="46dp"
+                    app:spinner_popup_animation="normal"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/titleEdt"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="@string/name"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/type" />
+
+                <com.skydoves.powerspinner.PowerSpinnerView
+                    android:id="@+id/spinnerType"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:hint="Choose"
+                    android:padding="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_font_size_16"
+                    app:spinner_arrow_gravity="end"
+                    app:spinner_arrow_padding="8dp"
+                    app:spinner_arrow_tint="@color/black"
+                    app:spinner_divider_color="@color/black"
+                    app:spinner_divider_show="true"
+                    app:spinner_divider_size="0.4dp"
+                    app:spinner_item_height="46dp"
+                    app:spinner_popup_animation="normal"
+                    app:spinner_popup_background="@color/white"
+                    app:spinner_popup_elevation="14dp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/value" />
+
+                <EditText
+                    android:id="@+id/discountAmountEdt"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="%"
+                    android:inputType="number" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/store_name" />
+
+                <EditText
+                    android:id="@+id/storeNameEdt"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="@string/store_name"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/upload_image" />
+
+                <TextView
+                    android:id="@+id/uploadImageProfile"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="@string/upload_image" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/store_link" />
+
+                <EditText
+                    android:id="@+id/storeLinkEdt"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="@string/store_link"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/code_id" />
+
+                <EditText
+                    android:id="@+id/codeIdEdt"
+                    style="@style/text_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="@string/code_id"
+                    android:inputType="text" />
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/valid_till" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/text_input"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/dateTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_font_size_16"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/dark_text"
+                        android:background="@android:color/transparent"
+                        android:layout_toLeftOf="@+id/datebtn" />
+
+                    <ImageView
+                        android:id="@+id/datebtn"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/calendar"
+                        tools:ignore="UseAppTint" />
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/text_dark_medium_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/terms_conditions" />
+
+                <EditText
+                    android:id="@+id/descriptionEdt"
+                    style="@style/terms_conditions_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:autofillHints="no"
+                    android:hint="@string/terms_conditions"
+                    android:gravity="start" />
+
+                <Button
+                    android:id="@+id/applyBtn"
+                    style="@style/primary_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttons_height"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:text="@string/apply"
+                    android:textAllCaps="false" />
+
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    style="@style/secondary_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttons_height"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

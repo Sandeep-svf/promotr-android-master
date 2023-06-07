@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">Promotr</string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="view_more">View more</string>
+
+    <string name="email">Email</string>
+    <string name="example">Example@example.com</string>
+    <string name="upload_image_profile">Upload image profile</string>
+    <string name="upload_image">Upload image</string>
+    <string name="password">Password</string>
+    <string name="forget_user_password">Forgot your password?</string>
+
+
+    <string name="full_name">Full Name</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="gender">Gender</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="dob">Date of Birth (Optional)</string>
+    <string name="country">Country</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password_hint">*Minimum 8 characters</string>
+    <string name="minimum_char">*Minimum 50 characters</string>
+    <string name="password_match">Passwords don\'t match</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_favorites">Favorites</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="title_search">Search</string>
+
+    <string name="search_by">Search</string>
+    <string name="influencer_stores">Influencer or stores...</string>
+    <string name="categories">Categories</string>
+    <string name="suggestions_of_the_day">Suggestions of the day</string>
+    <string name="promoters">Promoters</string>
+
+    <string name="become_a_promo_owner">Become a promo-owner</string>
+    <string name="influencer_or_stores">Influencer or stores</string>
+    <string name="discount_amount">Discount amount (%)</string>
+    <string name="available_before">Available before</string>
+    <string name="copy">Copy</string>
+    <string name="open_link">Open link</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="terms_and_conditions">Terms and conditions</string>
+    <string name="select_country">Select Country</string>
+    <string name="verify_mobile">Verify Mobile</string>
+    <string name="verify">Verify</string>
+    <string name="enter_received_otp">Enter received OTP</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="reset">Reset</string>
+    <string name="resend_otp">Resend OTP </string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="languages">Languages</string>
+    <string name="english">English</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="skip">Skip</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="selected_item">Toast</string>
+    <string name="category">Category</string>
+
+    <string-array name="Languages">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string name="title_activity_promo_owner_register">PromoOwnerRegisterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="promoter_sign_in">Promoter Sign up</string>
+    <string name="instagram">Instagram</string>
+    <string name="instagram_link">Instagram link</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_link">Facebook link</string>
+    <string name="about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="history">History</string>
+    <string name="my_promocodes">My Promocodes</string>
+    <string name="add_new">Add new</string>
+    <string name="ongoing">ongoing</string>
+    <string name="statistics">statistics</string>
+    <string name="previous_promocode">Privious Promocodes</string>
+    <string name="add_new_promocode">Add new promo code</string>
+    <string name="name">Name</string>
+    <string name="type">Type</string>
+    <string name="value">values</string>
+    <string name="store_name">Store name</string>
+    <string name="store_link">Store link</string>
+    <string name="terms_conditions">Terms and conditions</string>
+    <string name="valid_till">Valid till</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="code">Code</string>
+    <string name="choose">Choose</string>
+    <string name="discount">Discount</string>
+    <string name="filter_1">Filter 1</string>
+    <string name="filter_2">Filter Filter 2</string>
+    <string name="promo">424242</string>
+    <string name="promo_view">12D63EF</string>
+    <string name="promo_des">10% on bla bla</string>
+    <string name="promo_type">Adidas</string>
+    <string name="store">Store</string>
+    <string name="dates">Tuesday, 20 2021</string>
+    <string name="texts">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam Lorem ipsum dolor sit amet,              consetetur sadipscing elitr, sed diam</string>
+    <string name="best_Promocode">Best Promocode</string>
+    <string name="promo_code">Promo Code</string>
+    <string name="views">1,234 user use it</string>
+    <string name="views_957">957 user use it</string>
+    <string name="views_632">632 user use it</string>
+    <string name="user_name">Bhanu Pratap</string>
+    <string name="user_des">Any destination in your app that can be reached through more than one path should have a corresponding global action</string>
+    <string name="user_email">bhanu.dhampur@gmail.com</string>
+
+    <string name="login_error">Login error</string>
+    <string name="login_to_add_favorites">Please login to add favorites</string>
+    <string name="login_to_view_favorites">Please login to view favorites</string>
+    <string name="login_to_view_notifications">Please login to view Notifications</string>
+    <string name="register_error">Register error</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="please_enter_password">Please enter password</string>
+    <string name="please_enter_confirm_password">Please enter confirm password</string>
+    <string name="passwod_confirm_password">Password and confirm password dos\'t match</string>
+    <string name="OK">OK</string>
+    <string name="signup_error">Sign up error</string>
+    <string name="search">Search</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_select_gender">Please select gender type</string>
+    <string name="please_select_category">Please select category</string>
+    <string name="please_select_date">Please select date</string>
+    <string name="please_select_country">Please select country</string>
+    <string name="please_select_discount">Please select discount amount</string>
+    <string name="please_enter_mobile">Please enter mobile number</string>
+    <string name="please_enter_otp">Please enter otp</string>
+    <string name="reset_pass_error">Reset password error</string>
+    <string name="verify_mobile_error">Verify mobile error</string>
+    <string name="verify_email_error">Verify email error</string>
+    <string name="please_wait">Please Wait...</string>
+    <string name="already_email">The email has already been taken.</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="unable_to_connect">Unable to connect to the internet please try again</string>
+    <string name="server_error">Server Error</string>
+    <string name="please_enter_nickname">Please enter nickname</string>
+    <string name="please_enter_instagram_url">Please enter instagram url</string>
+    <string name="please_enter_about">Please enter about</string>
+    <string name="promoter_sign_up">Promoter sign up</string>
+    <string name="uploaded_successfully">Upload successfully</string>
+    <string name="least_char">The about must be at least 50 characters.</string>
+    <string name="code_id">Code id</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_discount">Please enter discount</string>
+    <string name="please_select_type">Please select type</string>
+    <string name="please_enter_store_name">Please enter store name</string>
+    <string name="please_enter_store_link">Please enter store link</string>
+    <string name="please_enter_code_id">Please enter code id</string>
+    <string name="please_enter_terms_and_conditions">Please enter terms and conditions</string>
+    <string name="add_new_promo_code">Add new promo code</string>
+    <string name="help_support"><![CDATA[Help & Support]]></string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="my_profile">My Profile</string>
+    <string name="account">Account</string>
+    <string name="faq">FAQ</string>
+    <string name="edit_promo_code">Edit Promo Code</string>
+    <string name="ok">Ok</string>
+    <string name="confirm_logout">Confirm Logout</string>
+    <string name="confirm_delete_account">Confirm Delete Account</string>
+    <string name="confirm_delete_promocode">Confirm Delete Promocode</string>
+    <string name="are_you_sure_to_logout">Do you want to logout?</string>
+    <string name="are_you_sure_to_delete_acccount">Do you want to delete your account?</string>
+    <string name="are_you_sure_to_delete_promocode">Do you want to delete your promocode?</string>
+    <string name="promoter_details">Promoter Details</string>
+    <string name="upload_profile">Update Profile</string>
+    <string name="update_promocode">Update Promocode</string>
+    <string name="add_promocode">Add Promocode</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="verify_your_email">Verify your Email</string>
+    <string name="verification_code_received_by_your_email">Enter verification code received by your email</string>
+    <string name="submit">Submit</string>
+    <string name="nickname">Nickname</string>
+    <string name="select_at_least_notification">Please select at least one notification</string>
+
+</resources>
